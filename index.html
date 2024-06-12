@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <title>MyCentrality</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container-fulid   backgroundShadow">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <a class="navbar-brand NavbarText" href="./index.html"><img src="./images/logo.png" alt="Logo"
+          class="NavbarLogo" />MyCentrality</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="navbar-nav mx-auto mt-2 mt-lg-0">
+        </div>
+        <form class="form-inline my-2 my-lg-0 buttonss">
+          <button id="loginButton-modal" class="btn my-2 my-sm-0 Loginbtn" type="button">
+            Login<i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 20px; font-size: 12px"></i>
+          </button>
+
+          <button class="btn my-2 my-sm-0 Bookbtn" id="onclickBottom">
+            Book a Demo
+          </button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- new login pop up -->
+  <div class="somebody" id="somebody">
+    <p>Somebody Will Be With You Soon !</p>
+  </div>
+  <div id="showContainer" class="LogFormMainmain">
+    <div class="LogFormMain">
+      <div class="login-popup" tabindex="0" id="loginPopupClose">
+        <form onsubmit="handleLogin(event)">
+          <div class="login-logo">
+            <img src="./images/logo.png" alt="Logo" />
+            <h2>MyCentrality</h2>
+          </div>
+          <h4>Sign In with MyCentrality</h4>
+          <p>Welcome back! please enter your detail</p>
+          <div class="login-input">
+            <i class="fas fa-envelope" id="lock"></i>
+            <input placeholder="Username" type="email" required />
+          </div>
+          <div class="password-container">
+            <i class="fas fa-lock" id="lock"></i>
+            <div class="password-input">
+              <input type="password" id="password" name="password" placeholder="Password" required />
+            </div>
+            <i class="fas fa-eye" onclick="handleTogglePassword()"></i>
+          </div>
+          <div class="checkbox-input">
+            <span>
+              <input type="checkbox" id="remember-me" name="remember-me" />
+              <label for="remember-me">Remember me</label>
+            </span>
+            <a href="#" class="signupp">Sign Up?</a>
+          </div>
+          <button class="login-button" id="submitButton" type="button">Continue</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- closer -->
+
+  <div class="mainContainer">
+    <div class="container">
+      <div class="row school">
+        <div class="col-md-6 firstDiv">
+          <h2><span>MyCentrality </span>Student and District Management</h2>
+          <p>
+            Empower your schools with Seamless Integration and Smart Analytics. Simplify your endless integrations with
+            our all-in-one solution for a district wide, user-friendly student information system. Our innovative
+            platform integrates predictive analytics to aid in the decision making process at every level of the K-12
+            ecosystem.
+          </p>
+          <div class="btns">
+            <button class="btn my-2 my-sm-0 Bookbtn" id="onclickBottoms">
+              Book a Demo
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 secondDiv">
+          <img src="./images/girl.png" alt="girlImage" />
+          <div class="card1 card">
+            <div class="info">
+              <span><i class="fa-solid fa-calendar-days"></i></span>
+              <div class="cardInfo">
+                <h4>400k</h4>
+                <p>Assisted Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <h4>Learn more about MyCentrality</h4>
+            <a href="#"><button class="btnJoin">About Us</button></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sliderComponent">COMPLETE MOBILE & WEB SOLUTION</h2>
+  <div class="image-container" id="imageContainer">
+    <img src="./images/slide1.png" width="600" height="455" alt="Image 1" />
+    <img src="./images/slide2.png" width="600" height="455" alt="Image 2" />
+    <img src="./images/slide3.png" width="600" height="455" alt="Image 3" />
+  </div>
+
+  <div class="software">
+    <div class="main">
+      <div class="heding">
+        <h2>All-In-One <span>Cloud Software</span></h2>
+        <p>
+          MyCentrality has been developed utilising years of cumulative K-12 institutional knowledge to provide
+          students, teachers, parents, and district administrators with the most innovative tool sets needed for a
+          data-centric approach to success.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card card1">
+          <span><i class="fa-solid fa-file-contract"></i></span>
+          <h2>360-Degree Student Data Monitoring</h2>
+          <p>
+            Gain a comprehensive view of each student's academic journey. From GPA tracking to demographic insights,
+            MyCentrality equips you with the tools to understand and support every student's unique needs.
+          </p>
+        </div>
+        <div class="card card2">
+          <span class="green"><i class="fa-solid fa-calendar-days"></i></span>
+          <h2>Simplified Rostering and Attendance Tracking</h2>
+          <p>
+            Streamline your daily administrative tasks with our intuitive rostering and attendance systems. Automated
+            reporting keeps everyone informed and accountable
+          </p>
+        </div>
+        <div class="card card3">
+          <span class="bround"><i class="fa-solid fa-users"></i></span>
+          <h2>Enhance Communications for All</h2>
+          <p>
+            Directly engage with parents via messages and document sharing. Simplify permissions with e-signatures and
+            keep parents updated through our integrated parent-teacher calendar
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- problem and solutions -->
+  <div class="vector-parent">
+    <div class="Containe-One divone">
+      <div class="headermain">
+        <div class="colmnIcon">
+        </div>
+        <h3 class="Probtext">PROBLEM</h3>
+
+      </div>
+
+      <p class="paraOne">Students often face challenges in accessing their grades and academic progress in a timely and
+        efficient manner, Lack of real-time updates and visibility into grades can lead to confusion and hinder
+        student-teacher communication.</p>
+
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>Limited Integrations</p>
+      </div>
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>Non-User Friendly</p>
+      </div>
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>Dated Interface</p>
+      </div>
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>Lack of Functionality</p>
+      </div>
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>High Usage Cost</p>
+      </div>
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>Pay-Per-Feature</p>
+      </div>
+      <div class="circl-minusParent">
+        <div class="circl-minus">
+          <span>&minus;</span>
+        </div>
+        <p>One-Size-Fits-All Solution</p>
+      </div>
+    </div>
+
+    <img src="./images//crnt.svg" class="crntSvg" />
+    <div class="Containe-two divone">
+      <div class="headermain2">
+        <div class="colmnIcon2">
+        </div>
+        <h3 class="Probtext2">SOLUTION</h3>
+      </div>
+      <p class="paraTwo">Through MyCentrality’s usage of efficient analytics, and streamlined user interface, key
+        stakeholders in the K12
+        community can all benefit from the equity of access and simplification of core features</p>
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>All-In-One Solution</p>
+      </div>
+
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>Multi-Point Access</p>
+      </div>
+
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>Tailor-Made</p>
+      </div>
+
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>Modern User Interface</p>
+      </div>
+
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>Accessible Data Comparison Tools</p>
+      </div>
+
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>All-Inclusive Pricing</p>
+      </div>
+
+      <div class="circl-TickParent">
+        <div class="circl-Ticker">
+          <span>&check;</span>
+        </div>
+        <p>Secured Integrations</p>
+      </div>
+    </div>
+  </div>
+  <!-- prob Sol Section close -->
+
+  <div class="Schedule">
+    <div class="main">
+      <div class="imgInfo">
+        <div class="dot"></div>
+        <div class="dot2"></div>
+        <h2>
+          Every metric you could ever want, at the palm of
+          <span>your hands</span>
+        </h2>
+        <p>
+          At MyCentrality, we believe in the transformative power of education. Our mission is to make a real difference
+          in the
+          lives of students, teachers, and communities by providing schools with the tools they need to create brighter
+          futures.
+          We know that the heart of every school is its people, and we're here to simplify their work with our seamless,
+          all-in-one platform
+        </p>
+      </div>
+      <div class="img">
+        <img src="./images/celender.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- our Mission section -->
+
+  <div class="Mission-parent">
+    <h3 class="missiontext">Our <span>Mission</span> </h3>
+
+    <div class="main1">
+      <div class="Containe-One">
+        <p class="paraMission">At MyCentrality, we believe in the transformative power of education. Our mission is to
+          simplify the work of students, teachers, and communities by providing schools with an all-in-one platform.
+          Through our user-friendly system, we help schools stay connected and make informed decisions using innovative
+          analytics. We support educators in their role as mentors, ensuring every child’s potential is nurtured. Our
+          goal is to stand beside schools, fostering inspiration and creating endless possibilities.</p>
+      </div>
+
+      <div class="image-container-parent">
+        <div class="forstd">
+          <img src="./images/Logo1.svg" alt="img not found">
+          <img src="./images/Logo2.svg" alt="img not found">
+          <img src="./images/Logo3.svg" alt="img not found">
+          <img src="./images/Logo4.svg" alt="img not found">
+        </div>
+        <div class="forstd2">
+          <img src="./images/Logo5.svg" alt="img not found">
+          <img src="./images/Logo6.svg" alt="img not found">
+          <img src="./images/Logo7.svg" alt="img not found">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- our mission section close  -->
+
+  <div class="BOX-MAIN">
+    <div class="box-main">
+      <h1>Embrace Outcomes Based Contracting with <span>Prospective Partners</span></h1>
+      <p>
+        MyCentrality is an all-encompassing, district management software that will
+        <br />
+        support all stakeholders within a localized K-12 domain
+      </p>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="techer-card">
+      <div class="techer-card-taxt">
+        <h2>Districts</h2>
+        <p>
+          Streamline your success metrics by centralizing them in a user-friendly database, enhancing efficiency in RFP
+          and outcome-driven planning across all decision-making levels
+        </p>
+        <a href="./Districts.html"><button>Learn more</button></a>
+      </div>
+      <img src="./images/Group 1000006015.png" alt="" />
+    </div>
+    <div class="techer-card backgroud-color">
+      <div class="techer-card-taxt pink-color">
+        <h2>Teachers</h2>
+        <p>
+          Boost your classroom’s efficiency with automated communications and progress tracking
+        </p>
+        <a href="./Teacher.html"><button>Learn more</button></a>
+      </div>
+      <img src="./images/Teacherrr.svg" alt="" />
+    </div>
+    <div class="techer-card background-green">
+      <div class="techer-card-taxt green-color">
+        <h2>Students</h2>
+        <p>
+          Make daily planning and assignment tracking a breeze with our fun and intuitive student friendly designs,
+          crafted to unlock their inner potential
+        </p>
+        <a href="./Student.html"><button>Learn more</button></a>
+      </div>
+      <img src="./images/Group 1000006019.png" alt="" />
+    </div>
+    <div class="techer-card background-orange">
+      <div class="techer-card-taxt orange-color">
+        <h2>Guardian</h2>
+        <p>
+          Take an active role in your child's learning journey with a comprehensive achievement tracking system designed
+          to satisfy even the most diligent parents
+        </p>
+        <a href="./Parent.html"><button>Learn more</button></a>
+      </div>
+      <img src="./images/Parenttt.svg" alt="" />
+    </div>
+  </div>
+
+  <div class="SECTION">
+    <div class="SECTION_MAIN">
+      <div class="TWo-DFLEX">
+        <div class="TWO_MAIN_IMGS">
+          <div class="TWO_imgS">
+            <img src="./images/image 2.png" alt="#" class="Image-one" />
+            <img src="./images/image 3.png" alt="#" />
+          </div>
+          <div class="TWO_imgS">
+            <img src="./images/image 5.png" alt="#" />
+            <img src="./images/image 6.png" alt="#" />
+          </div>
+        </div>
+
+        <div class="SECTION_ALPHA">
+          <div class="Top-SEC">
+            <hr />
+            <p>INTEGRATIONS</p>
+          </div>
+          <h2>200+ Educational Tools and Platform <span>Integrations</span></h2>
+          <p class="SECTION_Para">
+            Need another vendor integrated into your MyCentrality SIS? No worries! Our team will be ready to help create
+            a custom solution that fits your specific district’s needs
+          </p>
+          <!-- <button class="SECTION_BTN">Book a Demo</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="CARDs">
+    <div class="container">
+      <p class="Form-p">
+        Digitize your school in minutes with
+        <span class="Form-span">MyCentrality</span> Integrated
+        Platform
+      </p>
+      <div class="row Form-Img">
+        <div class="col-md-6 ">
+          <div class="input-row">
+            <div class="input-one">
+              <label>First Name</label>
+              <input type="text" placeholder="Enter your First name" />
+            </div>
+            <div class="input-one">
+              <label>Last Name</label>
+              <input type="text" placeholder="Enter your Last name" />
+            </div>
+          </div>
+          <p class="Form-Para">Select Organisation Type</p>
+          <div class="Form-Radios">
+            <div class="Form-Radio">
+              <input type="radio" name="radiobtn" />
+              <p>Public Charter School</p>
+            </div>
+            <div class="Form-Radio">
+              <input type="radio" name="radiobtn" />
+              <p>Private School</p>
+            </div>
+            <div class="Form-Radio">
+              <input type="radio" name="radiobtn" />
+              <p>Public School District</p>
+            </div>
+          </div>
+          <div class="Form-Sname">
+            <label>Your School Name</label><br />
+            <input type="text" placeholder="eg. St. Antoninus Catholic School" />
+          </div>
+          <div class="input-row-main mt-4">
+            <div class="input-one-1">
+              <label>Your Phone Number</label>
+              <div class="input-one-1-main">
+                <select class="form-select input-Select" aria-label="Default select example">
+                  <option selected>+1</option>
+                </select>
+                <input type="number" placeholder="Mobile Number" />
+              </div>
+            </div>
+            <div class="input-one">
+              <label>Your role in the School</label>
+              <select class="form-select input-Select" aria-label="Default select example">
+                <option selected>Select Role</option>
+                <option value="1">Student</option>
+                <option value="2">Teacher</option>
+              </select>
+            </div>
+          </div>
+          <div class="Form-Sname">
+            <label>Your Email</label><br />
+            <input type="text" placeholder="eg. principal@josephinternational.com" />
+          </div>
+          <div class="FormAlineCenter">
+            <button class="Book_Btn">Book a Demo</button>
+          </div>
+        </div>
+
+
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "44569122",
+            formId: "cf77c040-b4dc-4cc3-80c2-45f6cb11a6db",
+            target: '.CARDs .container .row .col-md-6',
+          });
+        </script>
+        <div class="col-md-6">
+          <img src="./images/Group 1000006018 (1).png" alt="" class="Side-Image" />
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <div class="main">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" />
+          <h2>MyCentrality</h2>
+        </div>
+        <div class="loginwithgoogle">
+          <div class="images"><img src="./images/Google Play.png" alt="google">
+            <img src="./images/Google Play (1).png" alt="google">
+          </div>
+          <p>@Copyright 2023 MyCentrality,LLC. All Right Reserved </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li class="linkedin-icon">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="facebook-icon">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="instagram-icon">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="twitter-icon">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- js for login form  -->
+    <script>
+
+      let onclickBottom = document.getElementById('onclickBottom');
+      onclickBottom.addEventListener('click', () => {
+        event.preventDefault();
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth'
+        })
+      });
+      let onclickBottoms = document.getElementById('onclickBottoms');
+      onclickBottoms.addEventListener('click', () => {
+        event.preventDefault();
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth'
+        })
+      })
+
+
+
+      let showContainer = document.getElementById("showContainer")
+      let loginButton = document.getElementById("loginButton-modal")
+
+      loginButton.addEventListener('click', (e) => {
+        showContainer.style.display = "block";
+      })
+      function handleLogin(event) {
+        event.preventDefault();
+      }
+
+      let submitButton = document.getElementById("submitButton")
+
+      const somebody = document.getElementById("somebody")
+
+      submitButton.addEventListener("click", () => {
+
+        somebody.style.display = "block";
+        showContainer.style.display = "none"
+
+
+        setTimeout(() => {
+          somebody.style.display = "none"
+        }, 3000)
+      })
+
+      let loginPopup = document.getElementById("loginPopupClose")
+
+      loginPopup.addEventListener("", () => {
+        console.log("I'm clicked")
+        showContainer.style.display = "none";
+      })
+
+      function handleTogglePassword() {
+        const passwordInput = document.getElementById('password');
+        const toggleIcon = document.querySelector('.toggle-password i');
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          toggleIcon.classList.remove('fa-eye');
+          toggleIcon.classList.add('fa-eye-slash');
+        } else {
+          passwordInput.type = 'password';
+          toggleIcon.classList.remove('fa-eye-slash');
+          toggleIcon.classList.add('fa-eye');
+        }
+      }
+    </script>
+    <!-- close form -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script>
+
+      $(document).ready(function () {
+        $('#myModal').modal('show');
+
+
+
+        function callScroll() {
+          const container = document.getElementById("imageContainer");
+          const images = Array.from(container.getElementsByTagName("img"));
+          const totalWidth = images.reduce(
+            (acc, img) => acc + img.offsetWidth,
+            0
+          );
+          images.forEach((img) => {
+            const clone = img.cloneNode(true);
+            container.appendChild(clone);
+          });
+
+          let scrollPosition = 0;
+
+          function scrollImages() {
+            scrollPosition += .7;
+            if (scrollPosition >= totalWidth) {
+              scrollPosition = 0;
+            }
+            container.scrollLeft = scrollPosition;
+            requestAnimationFrame(scrollImages);
+          }
+
+          scrollImages();
+
+          startCounterWhenVisible();
+        }
+        callScroll()
+        $('#myModal').on('hidden.bs.modal', function () {
+          $('body').css('overflow', 'auto');
+        });
+
+        $('#myModal').on('shown.bs.modal', function () {
+
+          $('body').css('overflow', 'hidden');
+        });
+
+      });
+
+
+
+      function startCounterWhenVisible() {
+        const counters = document.querySelectorAll('.counter');
+        const targets = Array.from(counters).map(counter => parseInt(counter.getAttribute('data-target')));
+        let counts = Array.from({ length: counters.length }, () => 0);
+        let isCounting = Array.from({ length: counters.length }, () => false);
+
+        function updateCounter(index) {
+          const increment = targets[index] / 100;
+          if (counts[index] < targets[index]) {
+            counts[index] += increment;
+            counters[index].textContent = Math.ceil(counts[index]);
+            requestAnimationFrame(() => updateCounter(index));
+          } else {
+            counters[index].textContent = targets[index];
+            isCounting[index] = false;
+          }
+        }
+
+        function handleScroll() {
+          counters.forEach((counter, index) => {
+            if (!isCounting[index] && isElementVisible(counter)) {
+              isCounting[index] = true;
+              updateCounter(index);
+            }
+          });
+        }
+
+        function isElementVisible(el) {
+          const rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+          );
+        }
+
+        window.addEventListener('scroll', handleScroll);
+      }
+
+      window.addEventListener('load', startCounterWhenVisible);
+
+      let loginModal = document.getElementById("loginModal")
+
+      function openLoginModal() {
+        loginModal.style.display = "block";
+      }
+
+      function closeLoginModal() {
+        loginModal.style.display = "none";
+      }
+    </script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="./Javascript.js"></script>
+</body>
+
+</html>
